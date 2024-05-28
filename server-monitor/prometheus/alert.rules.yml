@@ -1,0 +1,28 @@
+groups:
+- name: example
+  rules:
+  - alert: InstanceDown
+    expr: up == 0
+    for: 10s
+    labels:
+      severity: critical
+    annotations:
+      summary: "Instance is down"
+
+  - alert: HighCpuUsage
+    expr: node_cpu_seconds_total / node_uptime_seconds * 100 > 90
+    for: 1m
+    labels:
+      severity: warning
+    annotations:
+      summary: "CPU running at max"
+
+  - alert: HighRequestRate
+    expr: rate(custom_requests_total{job="BE_Project"}[1m]) > 0.4
+    for: 1m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Number of requests received is greater than 100"
+
+
