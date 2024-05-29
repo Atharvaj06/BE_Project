@@ -11,7 +11,7 @@ Monitoring the performance and health of web applications is crucial to ensure r
 - **Nginx:** A high-performance web server that serves the React application and acts as a reverse proxy to the Node.js server.
 - **Prometheus:** An open-source systems monitoring and alerting toolkit that collects metrics from configured targets at given intervals.
 - **Grafana:** An open-source platform for monitoring and observability that allows you to visualize the metrics collected by Prometheus.
-- **Node Exporter:** A Prometheus exporter for hardware and OS metrics exposed by *nix kernels, to monitor the server running the Node.js application.
+- **Node Exporter:** A Prometheus exporter for hardware and OS metrics exposed by Linux kernels, to monitor the server running the Node.js application.
 - **Alertmanager:** A component of Prometheus that handles alerts sent by client applications, such as the Prometheus server, and can send notifications via email.
 
 ### Objectives
