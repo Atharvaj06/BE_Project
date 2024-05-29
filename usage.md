@@ -17,6 +17,15 @@
     3. Example Query: `node_cpu_seconds_total` to visualize CPU usage.
 * Receiving alerts: Alerts are configured to be sent to your email. Ensure your email configuration in `alertmanager.yml` is correct.
 
+### Using Alertmanager
+* Access Alertmanager: Open your browser and navigate to http://<alertmanager_host>:9093 to access the Alertmanager UI.
+
+* View Alerts: On the Alertmanager UI, go to the "Alerts" tab to see a list of all active alerts.
+
+* Check Firing Alerts: In the "Alerts" tab, look for alerts with the state "firing" to identify currently firing alerts.
+
+* Alert Details: Click on an alert to view detailed information about the firing condition and related labels.
+
 # Advanced Usage
 * Create custom dashboards tailored to your specific metrics and monitoring needs.
 * Run direct SQL queries by attaching your local terminal with the database docker container by using the command `docker attach <container-id>`.

@@ -85,5 +85,5 @@ Note: If an image with the given name exists, then docker will use the local ima
     ├── client/           # React client
     ├── server/           # Node.js server
     ├── nginx/            # Nginx configuration
-    ├── db/               # DB configuration
+    ├── database/               # DB configuration
 
